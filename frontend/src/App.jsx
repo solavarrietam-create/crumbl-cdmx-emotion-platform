@@ -69,7 +69,7 @@ const RELATION_LABEL_EN = {
 
 const READING_COPY_EN = {
   title: "Emotional mapping of Crumbl Cookies CDMX opening",
-  notes: "Source: Social Listening on TikTok and Instagram (97 classified pieces from 13 posts). Class-contempt and economic indignation domain.",
+  notes: "Source: Social Listening on TikTok and Instagram, from July 28 to August 26, 2026.",
   dimensions: {
     "core-disgust": {
       label: "Class contempt and rejection",
