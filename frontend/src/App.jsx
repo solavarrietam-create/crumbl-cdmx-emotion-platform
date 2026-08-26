@@ -470,7 +470,9 @@ export default function App() {
               force.strength(-8);
             }
           }}
-          onEngineStop={() => graphRef.current?.zoomToFit(600, 36)}
+          onEngineStop={() => {
+            graphRef.current?.zoomToFit(800, 14, (node) => node.type === "core" || (node.intensity && node.intensity > 0));
+          }}
           nodeThreeObjectExtend={false}
           nodeThreeObject={(node) => {
             const activationWeight = node.activation?.weight ?? 0;
