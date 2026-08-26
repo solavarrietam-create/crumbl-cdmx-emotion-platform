@@ -1,0 +1,156 @@
+{
+  "reading_id": "crumbl-cdmx-2026-W35",
+  "week": "2026-W35",
+  "source": "social_listening_tiktok_instagram",
+  "title": "Mapeo emocional de la apertura de Crumbl Cookies CDMX",
+  "notes": "Fuente: Social Listening en TikTok e Instagram (97 piezas clasificables de 13 publicaciones). Dominio de desprecio de clase e indignación económica.",
+  "activations": [
+    {
+      "shade_id": "shade_contempt",
+      "weight": 0.95,
+      "confidence": "high",
+      "evidence": "Desprecio de clase dominante: comparación recurrente con comida tradicional mexicana ('puerquitos de piloncillo', panadería La Ideal con 753.8K likes, gorditas de nata)."
+    },
+    {
+      "shade_id": "shade_indignation",
+      "weight": 0.75,
+      "confidence": "high",
+      "evidence": "Indignación por precio ($89/galleta), reventa ($220 en Chiapas), consumo de marcas de EUA vs. apoyo a pequeños emprendedores locales y comparación con esperas del IMSS."
+    },
+    {
+      "shade_id": "shade_disdain",
+      "weight": 0.70,
+      "confidence": "high",
+      "evidence": "Desdén hacia la motivación de 'querer pertenecer' y la búsqueda de validación/atención en redes sociales ('comprando validación', 'hagan algo con sus vidas')."
+    },
+    {
+      "shade_id": "shade_verguenza_ajena",
+      "weight": 0.60,
+      "confidence": "medium",
+      "evidence": "Vergüenza ajena por la exposición pública de quienes acampan o hacen fila extrema ('qué perro oso formarte tanto tiempo por galletas')."
+    },
+    {
+      "shade_id": "shade_envidia",
+      "weight": 0.50,
+      "confidence": "medium",
+      "evidence": "Envidia de tiempo libre y privilegio ('qué envidia que tienen tanto tiempo para perder y no chambear', 1,928 likes)."
+    },
+    {
+      "shade_id": "shade_astonishment",
+      "weight": 0.45,
+      "confidence": "medium",
+      "evidence": "Estupefacción y asombro ante la desproporción de la conducta de fila y acampar 20 horas por un producto individual."
+    },
+    {
+      "shade_id": "shade_gratification",
+      "weight": 0.40,
+      "confidence": "medium",
+      "evidence": "Gratificación protegida tras coartadas neutras (reseñas de sabor, regalo de pareja, coleccionismo)."
+    },
+    {
+      "shade_id": "shade_satisfaction",
+      "weight": 0.38,
+      "confidence": "medium",
+      "evidence": "Postura del 'adulto tolerante' que valida el derecho a elegir y disfrutar sin juzgar."
+    },
+    {
+      "shade_id": "shade_exasperation",
+      "weight": 0.35,
+      "confidence": "low",
+      "evidence": "Fastidio y tedio ante la amplificación mediática del fenómeno ('qué hueva dan')."
+    },
+    {
+      "shade_id": "shade_dejection",
+      "weight": 0.20,
+      "confidence": "low",
+      "evidence": "Decepción por expectativa no cumplida de sabor tras pagar precio alto o hacer fila."
+    },
+    {
+      "shade_id": "shade_concern",
+      "weight": 0.18,
+      "confidence": "low",
+      "evidence": "Preocupación aislada por seguridad personal durante espera nocturna y comentarios sobre salud mental."
+    }
+  ],
+  "relations": [
+    {
+      "from_shade_id": "shade_verguenza_ajena",
+      "to_shade_id": "shade_contempt",
+      "relation": "compensatory_attack",
+      "weight": 0.82,
+      "evidence": "La vergüenza ajena ante la exposición pública se canaliza como burla y desprecio gastronómico de clase."
+    },
+    {
+      "from_shade_id": "shade_contempt",
+      "to_shade_id": "shade_indignation",
+      "relation": "normative_justification",
+      "weight": 0.78,
+      "evidence": "El desprecio al producto se justifica mediante un reclamo moral de apoyo al comercio y panadería local mexicana."
+    },
+    {
+      "from_shade_id": "shade_disdain",
+      "to_shade_id": "shade_indignation",
+      "relation": "normative_justification",
+      "weight": 0.70,
+      "evidence": "El ataque a la búsqueda de 'validación' se apoya en la crítica a la vanidad de redes y el esfuerzo mal dirigido."
+    },
+    {
+      "from_shade_id": "shade_envidia",
+      "to_shade_id": "shade_indignation",
+      "relation": "escalation_risk",
+      "weight": 0.64,
+      "evidence": "La envidia del tiempo libre o privilegio ajeno se reformula como indignación económica o de clase."
+    },
+    {
+      "from_shade_id": "shade_gratification",
+      "to_shade_id": "shade_satisfaction",
+      "relation": "protective_reframing",
+      "weight": 0.58,
+      "evidence": "El disfrute individual se escuda tras la postura del adulto tolerante o el marco de regalo para evitar el estigma."
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "core-disgust",
+      "label": "Desprecio de clase y rechazo",
+      "description": "68.1% del corpus clasificado. Núcleo dominante: rechazo vía comparación con comida mexicana tradicional, desdén a 'pertenecer' y vergüenza ajena.",
+      "intensity": 1.0,
+      "driver_shades": ["shade_contempt", "shade_disdain", "shade_scorn", "shade_verguenza_ajena"]
+    },
+    {
+      "id": "core-anger",
+      "label": "Indignación económica y nacionalista",
+      "description": "17.0% del corpus clasificado. Enojo moral por precio/reventa, llamado al consumo local, envidia de tiempo libre y fastidio.",
+      "intensity": 0.52,
+      "driver_shades": ["shade_indignation", "shade_envidia", "shade_exasperation"]
+    },
+    {
+      "id": "core-surprise",
+      "label": "Asombro por conducta de fila",
+      "description": "4.3% del corpus clasificado. Estupefacción ante la desproporción entre el estímulo (galleta) y la conducta (acampar 20 hrs).",
+      "intensity": 0.25,
+      "driver_shades": ["shade_astonishment"]
+    },
+    {
+      "id": "core-happiness",
+      "label": "Disfrute tolerante y coartada neutra",
+      "description": "4.3% del corpus clasificado. Gratificación enmarcada en regalo o coleccionismo y tolerancia de 'viven y dejan vivir'.",
+      "intensity": 0.25,
+      "driver_shades": ["shade_gratification", "shade_satisfaction"]
+    },
+    {
+      "id": "core-sadness",
+      "label": "Decepción por expectativa de sabor",
+      "description": "3.2% del corpus clasificado. Tristeza aislada por la brecha entre el costo/espera y el sabor percibido.",
+      "intensity": 0.15,
+      "driver_shades": ["shade_dejection"]
+    },
+    {
+      "id": "core-fear",
+      "label": "Inseguridad y preocupación",
+      "description": "3.2% del corpus clasificado. Preocupación puntual por riesgos en la espera nocturna de calle.",
+      "intensity": 0.15,
+      "driver_shades": ["shade_concern"]
+    }
+  ]
+}

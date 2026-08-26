@@ -1,0 +1,1650 @@
+{
+  "meta": {
+    "schema_version": "0.2.0",
+    "default_lang": "es"
+  },
+  "nodes": [
+    {
+      "id": "core_fear",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Miedo",
+        "en": "Fear"
+      },
+      "descriptions": {
+        "es": "Respuesta ante una amenaza percibida, real o simbólica.",
+        "en": "Response to a perceived threat, real or symbolic."
+      }
+    },
+    {
+      "id": "shade_fright",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "susto",
+        "en": "fright"
+      },
+      "descriptions": {
+        "es": "Miedo súbito ante un evento repentino; en México tiene categoría propia como padecimiento popular (Rubel).",
+        "en": "Sudden fear from an abrupt event; documented in Mexico as its own folk-illness category (Rubel)."
+      }
+    },
+    {
+      "id": "shade_terror",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "terror",
+        "en": "terror"
+      },
+      "descriptions": {
+        "es": "Miedo extremo, cercano a la parálisis.",
+        "en": "Extreme fear, close to paralysis."
+      }
+    },
+    {
+      "id": "shade_dread",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "pavor",
+        "en": "dread"
+      },
+      "descriptions": {
+        "es": "Miedo anticipatorio ante algo que se sabe que va a pasar.",
+        "en": "Anticipatory fear toward something known to be coming."
+      }
+    },
+    {
+      "id": "shade_verguenza",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "vergüenza",
+        "en": "shame"
+      },
+      "descriptions": {
+        "es": "Miedo a perder estatus social; respuesta de sumisión ante una amenaza de rango (Gilbert).",
+        "en": "Fear of losing social status; submission response to a rank threat (Gilbert)."
+      }
+    },
+    {
+      "id": "shade_anxiety",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "ansiedad",
+        "en": "anxiety"
+      },
+      "descriptions": {
+        "es": "Malestar difuso ante una amenaza no específica.",
+        "en": "Diffuse unease about a threat that isn't specific."
+      }
+    },
+    {
+      "id": "shade_apprehension",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "aprensión",
+        "en": "apprehension"
+      },
+      "descriptions": {
+        "es": "Inquietud leve ante algo que podría salir mal.",
+        "en": "Mild unease about something that might go wrong."
+      }
+    },
+    {
+      "id": "shade_nervousness",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "nerviosismo",
+        "en": "nervousness"
+      },
+      "descriptions": {
+        "es": "Activación física ante una situación incierta próxima.",
+        "en": "Physical activation ahead of an uncertain situation."
+      }
+    },
+    {
+      "id": "shade_concern",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "preocupación",
+        "en": "concern"
+      },
+      "descriptions": {
+        "es": "Atención sostenida hacia un riesgo posible.",
+        "en": "Sustained attention toward a possible risk."
+      }
+    },
+    {
+      "id": "shade_consternation",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "consternación",
+        "en": "consternation"
+      },
+      "descriptions": {
+        "es": "Desconcierto mezclado con temor ante algo inesperado y grave.",
+        "en": "Dismay mixed with fear at something unexpected and serious."
+      }
+    },
+    {
+      "id": "shade_misgiving",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "recelo",
+        "en": "misgiving"
+      },
+      "descriptions": {
+        "es": "Duda con tinte de desconfianza sobre una decisión o persona.",
+        "en": "Doubt tinged with distrust about a decision or person."
+      }
+    },
+    {
+      "id": "shade_wariness",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "cautela",
+        "en": "wariness"
+      },
+      "descriptions": {
+        "es": "Alerta sostenida para evitar un daño anticipado.",
+        "en": "Sustained alertness to avoid anticipated harm."
+      }
+    },
+    {
+      "id": "shade_qualm",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "escrúpulo",
+        "en": "qualm"
+      },
+      "descriptions": {
+        "es": "Duda moral breve antes de actuar.",
+        "en": "Brief moral hesitation before acting."
+      }
+    },
+    {
+      "id": "shade_edginess",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "tensión",
+        "en": "edginess"
+      },
+      "descriptions": {
+        "es": "Irritabilidad nerviosa, al borde de reaccionar.",
+        "en": "Nervous irritability, on the verge of reacting."
+      }
+    },
+    {
+      "id": "shade_phobia",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "fobia",
+        "en": "phobia"
+      },
+      "descriptions": {
+        "es": "Miedo intenso y desproporcionado a un objeto o situación específica.",
+        "en": "Intense, disproportionate fear of a specific object or situation."
+      }
+    },
+    {
+      "id": "shade_panic",
+      "type": "shade",
+      "parent": "core_fear",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "pánico",
+        "en": "panic"
+      },
+      "descriptions": {
+        "es": "Miedo agudo que desborda la capacidad de actuar con calma.",
+        "en": "Acute fear that overwhelms the ability to act calmly."
+      }
+    },
+    {
+      "id": "core_anger",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Enojo",
+        "en": "Anger"
+      },
+      "descriptions": {
+        "es": "Reacción ante una ofensa, injusticia o bloqueo a algo que se quiere lograr.",
+        "en": "Reaction to an offense, injustice, or blocked goal."
+      }
+    },
+    {
+      "id": "shade_resentment",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "resentimiento",
+        "en": "resentment"
+      },
+      "descriptions": {
+        "es": "Enojo sostenido por una ofensa que no se resolvió.",
+        "en": "Sustained anger over an unresolved offense."
+      }
+    },
+    {
+      "id": "shade_indignation",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "indignación",
+        "en": "indignation"
+      },
+      "descriptions": {
+        "es": "Enojo activado por una injusticia percibida, propia o ajena.",
+        "en": "Anger triggered by a perceived injustice."
+      }
+    },
+    {
+      "id": "shade_acrimony",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "acritud",
+        "en": "acrimony"
+      },
+      "descriptions": {
+        "es": "Enojo con tono amargo, sostenido en el trato hacia alguien.",
+        "en": "Anger with a bitter tone, sustained toward someone."
+      }
+    },
+    {
+      "id": "shade_vexation",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "contrariedad",
+        "en": "vexation"
+      },
+      "descriptions": {
+        "es": "Enojo leve ante un obstáculo o fastidio.",
+        "en": "Mild anger at an obstacle or annoyance."
+      }
+    },
+    {
+      "id": "shade_envidia",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "envidia",
+        "en": "envy"
+      },
+      "descriptions": {
+        "es": "Dolor y hostilidad ante lo que otro tiene y uno no; en México documentada como mal de ojo.",
+        "en": "Pain and hostility at what another has; documented in Mexico as mal de ojo."
+      }
+    },
+    {
+      "id": "shade_annoyance",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "molestia",
+        "en": "annoyance"
+      },
+      "descriptions": {
+        "es": "Irritación leve ante una interrupción menor.",
+        "en": "Low-grade irritation at a minor disruption."
+      }
+    },
+    {
+      "id": "shade_exasperation",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "exasperación",
+        "en": "exasperation"
+      },
+      "descriptions": {
+        "es": "Enojo que se acumula por frustración repetida.",
+        "en": "Anger that builds from repeated frustration."
+      }
+    },
+    {
+      "id": "shade_fury",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "furia",
+        "en": "fury"
+      },
+      "descriptions": {
+        "es": "Enojo intenso, con impulso de descarga inmediata.",
+        "en": "Intense anger with an urge for immediate release."
+      }
+    },
+    {
+      "id": "shade_outrage",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "ultraje",
+        "en": "outrage"
+      },
+      "descriptions": {
+        "es": "Enojo colectivo o moral ante una ofensa grave.",
+        "en": "Collective or moral anger at a serious offense."
+      }
+    },
+    {
+      "id": "shade_wrath",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "ira",
+        "en": "wrath"
+      },
+      "descriptions": {
+        "es": "Enojo intenso y sostenido, con intención de castigo.",
+        "en": "Intense, sustained anger with intent to punish."
+      }
+    },
+    {
+      "id": "shade_animosity",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "animadversión",
+        "en": "animosity"
+      },
+      "descriptions": {
+        "es": "Hostilidad de fondo hacia alguien específico, sostenida en el tiempo.",
+        "en": "Underlying hostility toward a specific person, over time."
+      }
+    },
+    {
+      "id": "shade_irritability",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "irritabilidad",
+        "en": "irritability"
+      },
+      "descriptions": {
+        "es": "Umbral bajo para enojarse ante casi cualquier estímulo.",
+        "en": "Low threshold for anger at almost any stimulus."
+      }
+    },
+    {
+      "id": "shade_hostility",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "hostilidad",
+        "en": "hostility"
+      },
+      "descriptions": {
+        "es": "Disposición activa a confrontar o dañar.",
+        "en": "Active disposition to confront or harm."
+      }
+    },
+    {
+      "id": "shade_hatred",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "odio",
+        "en": "hatred"
+      },
+      "descriptions": {
+        "es": "Rechazo profundo y sostenido hacia alguien o algo.",
+        "en": "Deep, sustained rejection of someone or something."
+      }
+    },
+    {
+      "id": "shade_violence",
+      "type": "shade",
+      "parent": "core_anger",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "violencia",
+        "en": "violence"
+      },
+      "descriptions": {
+        "es": "Enojo que se vuelve acción física o verbal directa.",
+        "en": "Anger that becomes direct physical or verbal action."
+      }
+    },
+    {
+      "id": "core_happiness",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Felicidad",
+        "en": "Happiness"
+      },
+      "descriptions": {
+        "es": "Estado positivo asociado a satisfacción, conexión o logro.",
+        "en": "Positive state associated with satisfaction, connection, or achievement."
+      }
+    },
+    {
+      "id": "shade_contentment",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "contento",
+        "en": "contentment"
+      },
+      "descriptions": {
+        "es": "Bienestar tranquilo, sin necesidad de más.",
+        "en": "Calm wellbeing, without needing more."
+      }
+    },
+    {
+      "id": "shade_gratification",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "gratificación",
+        "en": "gratification"
+      },
+      "descriptions": {
+        "es": "Placer que llega tras conseguir algo que se buscaba.",
+        "en": "Pleasure that follows getting something one was after."
+      }
+    },
+    {
+      "id": "shade_satisfaction",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "satisfacción",
+        "en": "satisfaction"
+      },
+      "descriptions": {
+        "es": "Sensación de que algo cumplió lo esperado.",
+        "en": "Sense that something met what was expected."
+      }
+    },
+    {
+      "id": "shade_delight",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "alto",
+      "labels": {
+        "es": "deleite",
+        "en": "delight"
+      },
+      "descriptions": {
+        "es": "Placer inmediato ante algo agradable, más ligero que el gozo.",
+        "en": "Immediate pleasure at something pleasant, lighter than joy."
+      }
+    },
+    {
+      "id": "shade_joy",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "gozo",
+        "en": "joy"
+      },
+      "descriptions": {
+        "es": "Alegría plena, a menudo compartida.",
+        "en": "Full happiness, often shared."
+      }
+    },
+    {
+      "id": "shade_relief",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "medio",
+      "labels": {
+        "es": "alivio",
+        "en": "relief"
+      },
+      "descriptions": {
+        "es": "Descarga de tensión al terminar una amenaza o carga.",
+        "en": "Release of tension when a threat or burden ends."
+      }
+    },
+    {
+      "id": "shade_bliss",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "dicha",
+        "en": "bliss"
+      },
+      "descriptions": {
+        "es": "Bienestar profundo y sereno.",
+        "en": "Deep, serene wellbeing."
+      }
+    },
+    {
+      "id": "shade_amusement",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "diversión",
+        "en": "amusement"
+      },
+      "descriptions": {
+        "es": "Placer ligero ante algo gracioso o entretenido.",
+        "en": "Light pleasure at something funny or entertaining."
+      }
+    },
+    {
+      "id": "shade_pride",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "orgullo",
+        "en": "pride"
+      },
+      "descriptions": {
+        "es": "Satisfacción por un logro propio o de alguien cercano.",
+        "en": "Satisfaction from an achievement, one's own or someone close."
+      }
+    },
+    {
+      "id": "shade_sensual_pleasure",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "placer sensorial",
+        "en": "sensual pleasure"
+      },
+      "descriptions": {
+        "es": "Disfrute a través de los sentidos.",
+        "en": "Enjoyment through the senses."
+      }
+    },
+    {
+      "id": "shade_thrill",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "emoción intensa",
+        "en": "thrill"
+      },
+      "descriptions": {
+        "es": "Excitación breve ante algo estimulante o riesgoso.",
+        "en": "Brief excitement at something stimulating or risky."
+      }
+    },
+    {
+      "id": "shade_rapture",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "arrobamiento",
+        "en": "rapture"
+      },
+      "descriptions": {
+        "es": "Placer intenso que absorbe por completo la atención.",
+        "en": "Intense pleasure that fully absorbs attention."
+      }
+    },
+    {
+      "id": "shade_euphoria",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "euforia",
+        "en": "euphoria"
+      },
+      "descriptions": {
+        "es": "Estado de energía y bienestar elevado, a veces desproporcionado al estímulo.",
+        "en": "Elevated wellbeing, sometimes disproportionate to the trigger."
+      }
+    },
+    {
+      "id": "shade_whimsy",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "capricho",
+        "en": "whimsy"
+      },
+      "descriptions": {
+        "es": "Alegría ligera y algo caprichosa, sin peso serio.",
+        "en": "Light, whimsical happiness, without serious weight."
+      }
+    },
+    {
+      "id": "shade_ecstasy",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "éxtasis",
+        "en": "ecstasy"
+      },
+      "descriptions": {
+        "es": "Placer extremo, cercano al desborde.",
+        "en": "Extreme pleasure, close to overflow."
+      }
+    },
+    {
+      "id": "shade_mania",
+      "type": "shade",
+      "parent": "core_happiness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "manía",
+        "en": "mania"
+      },
+      "descriptions": {
+        "es": "Excitación elevada y sostenida, con pérdida parcial de control. Es shade de la rueda emocional, no el diagnóstico clínico.",
+        "en": "Elevated, sustained excitement, with partial loss of control. Emotion-wheel term, not the clinical diagnosis."
+      }
+    },
+    {
+      "id": "core_sadness",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Tristeza",
+        "en": "Sadness"
+      },
+      "descriptions": {
+        "es": "Respuesta ante una pérdida, real o percibida.",
+        "en": "Response to a real or perceived loss."
+      }
+    },
+    {
+      "id": "shade_grief",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "duelo",
+        "en": "grief"
+      },
+      "descriptions": {
+        "es": "Dolor profundo ante una pérdida definitiva.",
+        "en": "Deep pain over a definitive loss."
+      }
+    },
+    {
+      "id": "shade_sorrow",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "pesar",
+        "en": "sorrow"
+      },
+      "descriptions": {
+        "es": "Tristeza sostenida, más contenida que el duelo agudo.",
+        "en": "Sustained sadness, more contained than acute grief."
+      }
+    },
+    {
+      "id": "shade_cheerlessness",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "desánimo",
+        "en": "cheerlessness"
+      },
+      "descriptions": {
+        "es": "Falta de ánimo, ausencia de alegría cotidiana.",
+        "en": "Lack of spirit, absence of everyday cheer."
+      }
+    },
+    {
+      "id": "shade_gloom",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "pesadumbre",
+        "en": "gloom"
+      },
+      "descriptions": {
+        "es": "Tristeza que tiñe el ambiente o el estado general.",
+        "en": "Sadness that colors the surroundings or overall mood."
+      }
+    },
+    {
+      "id": "shade_melancholy",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "melancolía",
+        "en": "melancholy"
+      },
+      "descriptions": {
+        "es": "Tristeza reflexiva, a veces con un tono nostálgico.",
+        "en": "Reflective sadness, sometimes with a nostalgic tone."
+      }
+    },
+    {
+      "id": "shade_selfpity",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "autocompasión",
+        "en": "self-pity"
+      },
+      "descriptions": {
+        "es": "Tristeza centrada en la propia situación, con sensación de injusticia.",
+        "en": "Sadness centered on one's own situation, with a sense of unfairness."
+      }
+    },
+    {
+      "id": "shade_loneliness",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "soledad",
+        "en": "loneliness"
+      },
+      "descriptions": {
+        "es": "Tristeza por ausencia de conexión con otros.",
+        "en": "Sadness from a lack of connection with others."
+      }
+    },
+    {
+      "id": "shade_dejection",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "abatimiento",
+        "en": "dejection"
+      },
+      "descriptions": {
+        "es": "Pérdida de ánimo tras un fracaso o decepción.",
+        "en": "Loss of spirit after a failure or disappointment."
+      }
+    },
+    {
+      "id": "shade_despair",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "desesperanza",
+        "en": "despair"
+      },
+      "descriptions": {
+        "es": "Tristeza sin expectativa de que la situación mejore.",
+        "en": "Sadness with no expectation that things will improve."
+      }
+    },
+    {
+      "id": "shade_depression_word",
+      "type": "shade",
+      "parent": "core_sadness",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "abatimiento profundo",
+        "en": "depression"
+      },
+      "descriptions": {
+        "es": "Tristeza intensa y prolongada. Es shade de la rueda emocional, no el diagnóstico clínico.",
+        "en": "Intense, prolonged sadness. Emotion-wheel term, not the clinical diagnosis."
+      }
+    },
+    {
+      "id": "core_surprise",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Sorpresa",
+        "en": "Surprise"
+      },
+      "descriptions": {
+        "es": "Reacción breve ante un evento inesperado, antes de que se le asigne una valencia.",
+        "en": "Brief reaction to an unexpected event, before it gets a valence."
+      }
+    },
+    {
+      "id": "shade_shock",
+      "type": "shade",
+      "parent": "core_surprise",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "conmoción",
+        "en": "shock"
+      },
+      "descriptions": {
+        "es": "Reacción abrupta ante algo totalmente inesperado.",
+        "en": "Abrupt reaction to something completely unexpected."
+      }
+    },
+    {
+      "id": "shade_astonishment",
+      "type": "shade",
+      "parent": "core_surprise",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "estupefacción",
+        "en": "astonishment"
+      },
+      "descriptions": {
+        "es": "Sorpresa que deja momentáneamente sin reacción.",
+        "en": "Surprise that leaves one momentarily unable to react."
+      }
+    },
+    {
+      "id": "shade_amazement",
+      "type": "shade",
+      "parent": "core_surprise",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "asombro",
+        "en": "amazement"
+      },
+      "descriptions": {
+        "es": "Sorpresa con admiración incluida.",
+        "en": "Surprise combined with admiration."
+      }
+    },
+    {
+      "id": "shade_wonder",
+      "type": "shade",
+      "parent": "core_surprise",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "maravilla",
+        "en": "wonder"
+      },
+      "descriptions": {
+        "es": "Sorpresa abierta, con curiosidad hacia lo que se descubre.",
+        "en": "Open surprise, with curiosity about what is discovered."
+      }
+    },
+    {
+      "id": "core_disgust",
+      "type": "core",
+      "parent": null,
+      "mx_weight": null,
+      "labels": {
+        "es": "Asco",
+        "en": "Disgust"
+      },
+      "descriptions": {
+        "es": "Rechazo ante algo percibido como contaminante o moralmente inaceptable.",
+        "en": "Rejection of something perceived as contaminating or morally unacceptable."
+      }
+    },
+    {
+      "id": "shade_contempt",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "desprecio",
+        "en": "contempt"
+      },
+      "descriptions": {
+        "es": "Rechazo que incluye sentirse superior a lo rechazado.",
+        "en": "Rejection that includes feeling superior to what is rejected."
+      }
+    },
+    {
+      "id": "shade_disdain",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "desdén",
+        "en": "disdain"
+      },
+      "descriptions": {
+        "es": "Rechazo frío, casi indiferente.",
+        "en": "Cold, almost indifferent rejection."
+      }
+    },
+    {
+      "id": "shade_scorn",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "menosprecio",
+        "en": "scorn"
+      },
+      "descriptions": {
+        "es": "Rechazo con burla o descalificación abierta.",
+        "en": "Rejection with open mockery or dismissal."
+      }
+    },
+    {
+      "id": "shade_verguenza_ajena",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "vergüenza ajena",
+        "en": "vicarious shame"
+      },
+      "descriptions": {
+        "es": "Vergüenza sentida en nombre de otro ante su exposición pública; reacción de rechazo empático.",
+        "en": "Shame felt on behalf of another during public exposure; empathetic rejection reaction."
+      }
+    },
+    {
+      "id": "shade_abhorrence",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "aborrecimiento",
+        "en": "abhorrence"
+      },
+      "descriptions": {
+        "es": "Rechazo intenso y visceral.",
+        "en": "Intense, visceral rejection."
+      }
+    },
+    {
+      "id": "shade_aversion",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "aversión",
+        "en": "aversion"
+      },
+      "descriptions": {
+        "es": "Impulso de alejarse de algo desagradable.",
+        "en": "Impulse to move away from something unpleasant."
+      }
+    },
+    {
+      "id": "shade_distaste",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "disgusto leve",
+        "en": "distaste"
+      },
+      "descriptions": {
+        "es": "Rechazo suave, más cercano al desagrado que al asco.",
+        "en": "Mild rejection, closer to dislike than to disgust."
+      }
+    },
+    {
+      "id": "shade_revulsion",
+      "type": "shade",
+      "parent": "core_disgust",
+      "mx_weight": "pendiente",
+      "labels": {
+        "es": "repulsión",
+        "en": "revulsion"
+      },
+      "descriptions": {
+        "es": "Rechazo físico inmediato, cercano a náusea.",
+        "en": "Immediate physical rejection, close to nausea."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_shade_fright_core_fear",
+      "source": "shade_fright",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_terror_core_fear",
+      "source": "shade_terror",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_dread_core_fear",
+      "source": "shade_dread",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_verguenza_core_fear",
+      "source": "shade_verguenza",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_anxiety_core_fear",
+      "source": "shade_anxiety",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_apprehension_core_fear",
+      "source": "shade_apprehension",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_nervousness_core_fear",
+      "source": "shade_nervousness",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_concern_core_fear",
+      "source": "shade_concern",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.18
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_consternation_core_fear",
+      "source": "shade_consternation",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_misgiving_core_fear",
+      "source": "shade_misgiving",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_wariness_core_fear",
+      "source": "shade_wariness",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_qualm_core_fear",
+      "source": "shade_qualm",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_edginess_core_fear",
+      "source": "shade_edginess",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_phobia_core_fear",
+      "source": "shade_phobia",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_panic_core_fear",
+      "source": "shade_panic",
+      "target": "core_fear",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_resentment_core_anger",
+      "source": "shade_resentment",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_indignation_core_anger",
+      "source": "shade_indignation",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.75
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_acrimony_core_anger",
+      "source": "shade_acrimony",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_vexation_core_anger",
+      "source": "shade_vexation",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_envidia_core_anger",
+      "source": "shade_envidia",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.50
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_annoyance_core_anger",
+      "source": "shade_annoyance",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_exasperation_core_anger",
+      "source": "shade_exasperation",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.35
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_fury_core_anger",
+      "source": "shade_fury",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_outrage_core_anger",
+      "source": "shade_outrage",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_wrath_core_anger",
+      "source": "shade_wrath",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_animosity_core_anger",
+      "source": "shade_animosity",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_irritability_core_anger",
+      "source": "shade_irritability",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_hostility_core_anger",
+      "source": "shade_hostility",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_hatred_core_anger",
+      "source": "shade_hatred",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_violence_core_anger",
+      "source": "shade_violence",
+      "target": "core_anger",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_contentment_core_happiness",
+      "source": "shade_contentment",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_gratification_core_happiness",
+      "source": "shade_gratification",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.40
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_satisfaction_core_happiness",
+      "source": "shade_satisfaction",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.38
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_delight_core_happiness",
+      "source": "shade_delight",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_joy_core_happiness",
+      "source": "shade_joy",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_relief_core_happiness",
+      "source": "shade_relief",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_bliss_core_happiness",
+      "source": "shade_bliss",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_amusement_core_happiness",
+      "source": "shade_amusement",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_pride_core_happiness",
+      "source": "shade_pride",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_sensual_pleasure_core_happiness",
+      "source": "shade_sensual_pleasure",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_thrill_core_happiness",
+      "source": "shade_thrill",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_rapture_core_happiness",
+      "source": "shade_rapture",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_euphoria_core_happiness",
+      "source": "shade_euphoria",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_whimsy_core_happiness",
+      "source": "shade_whimsy",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_ecstasy_core_happiness",
+      "source": "shade_ecstasy",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_mania_core_happiness",
+      "source": "shade_mania",
+      "target": "core_happiness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_grief_core_sadness",
+      "source": "shade_grief",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_sorrow_core_sadness",
+      "source": "shade_sorrow",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_cheerlessness_core_sadness",
+      "source": "shade_cheerlessness",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_gloom_core_sadness",
+      "source": "shade_gloom",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_melancholy_core_sadness",
+      "source": "shade_melancholy",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_selfpity_core_sadness",
+      "source": "shade_selfpity",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_loneliness_core_sadness",
+      "source": "shade_loneliness",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_dejection_core_sadness",
+      "source": "shade_dejection",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.20
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_despair_core_sadness",
+      "source": "shade_despair",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_depression_word_core_sadness",
+      "source": "shade_depression_word",
+      "target": "core_sadness",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_shock_core_surprise",
+      "source": "shade_shock",
+      "target": "core_surprise",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_astonishment_core_surprise",
+      "source": "shade_astonishment",
+      "target": "core_surprise",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.45
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_amazement_core_surprise",
+      "source": "shade_amazement",
+      "target": "core_surprise",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_wonder_core_surprise",
+      "source": "shade_wonder",
+      "target": "core_surprise",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_contempt_core_disgust",
+      "source": "shade_contempt",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.95
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_disdain_core_disgust",
+      "source": "shade_disdain",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.70
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_scorn_core_disgust",
+      "source": "shade_scorn",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.65
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_verguenza_ajena_core_disgust",
+      "source": "shade_verguenza_ajena",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [
+        {
+          "week": "2026-W35",
+          "value": 0.60
+        }
+      ],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_abhorrence_core_disgust",
+      "source": "shade_abhorrence",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_aversion_core_disgust",
+      "source": "shade_aversion",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_distaste_core_disgust",
+      "source": "shade_distaste",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    },
+    {
+      "id": "e_shade_revulsion_core_disgust",
+      "source": "shade_revulsion",
+      "target": "core_disgust",
+      "relation": "belongs_to",
+      "weights": [],
+      "updated_at": "2026-08-25T12:00:00Z"
+    }
+  ]
+}
