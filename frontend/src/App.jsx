@@ -458,20 +458,36 @@ export default function App() {
           graphData={graphData}
           backgroundColor="#050713"
           nodeRelSize={6}
-          d3VelocityDecay={0.62}
-          d3AlphaDecay={0.08}
+          d3VelocityDecay={0.55}
+          d3AlphaDecay={0.06}
           d3Force={(forceName, force) => {
             if (forceName === "link") {
               force
-                .distance((link) => (link.link_type === "backbone" ? 34 : link.link_type === "reading" ? 34 : 22))
-                .strength((link) => (link.link_type === "backbone" ? 0.9 : link.link_type === "reading" ? 0.8 : 0.6));
+                .distance((link) => {
+                  if (link.link_type === "backbone") return 26;
+                  if (link.link_type === "reading") return 24;
+                  return (link.weight_current && link.weight_current > 0) ? 18 : 8;
+                })
+                .strength((link) => {
+                  if (link.link_type === "backbone") return 0.85;
+                  if (link.link_type === "reading") return 0.8;
+                  return (link.weight_current && link.weight_current > 0) ? 0.65 : 0.95;
+                });
             }
             if (forceName === "charge") {
-              force.strength(-8);
+              force
+                .strength((node) => {
+                  if (node.type === "core") return -30;
+                  if (node.intensity && node.intensity > 0) return -16;
+                  return -1.2;
+                })
+                .distanceMax(100);
             }
           }}
           onEngineStop={() => {
-            graphRef.current?.zoomToFit(800, 14, (node) => node.type === "core" || (node.intensity && node.intensity > 0));
+            if (graphRef.current) {
+              graphRef.current.zoomToFit(800, 24, (node) => node.type === "core" || (node.intensity && node.intensity > 0));
+            }
           }}
           nodeThreeObjectExtend={false}
           nodeThreeObject={(node) => {
