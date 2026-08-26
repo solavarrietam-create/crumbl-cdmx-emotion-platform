@@ -310,6 +310,71 @@ export default function App() {
   }, [reading]);
 
   useEffect(() => {
+    if (graphData.nodes.length) {
+      const t1 = setTimeout(fitActiveGraph, 400);
+      const t2 = setTimeout(fitActiveGraph, 1200);
+      return () => {
+        clearTimeout(t1);
+        clearTimeout(t2);
+      };
+    }
+  }, [graphData]);
+
+  const fitActiveGraph = () => {
+    if (graphRef.current) {
+      window.__graph = graphRef.current;
+    }
+    if (!graphRef.current) return;
+    const g = graphRef.current;
+    const scene = g.scene();
+    const nodeMap = new Map();
+    scene.traverse((obj) => {
+      if (obj.__data && obj.__data.id) {
+        nodeMap.set(obj.__data.id, obj.__data);
+      }
+    });
+    const nodes = Array.from(nodeMap.values());
+    const activeNodes = nodes.filter(
+      (n) => n.type === "core" || (n.intensity && n.intensity > 0)
+    );
+    if (!activeNodes.length) return;
+
+    let sumW = 0;
+    let sumX = 0, sumY = 0, sumZ = 0;
+    let minX = Infinity, maxX = -Infinity;
+    let minY = Infinity, maxY = -Infinity;
+
+    activeNodes.forEach((n) => {
+      const w = Math.pow(n.intensity || 0.1, 1.5) + (n.type === "core" ? 0.3 : 0);
+      sumW += w;
+      sumX += n.x * w;
+      sumY += n.y * w;
+      sumZ += n.z * w;
+
+      if (n.x < minX) minX = n.x;
+      if (n.x > maxX) maxX = n.x;
+      if (n.y < minY) minY = n.y;
+      if (n.y > maxY) maxY = n.y;
+    });
+
+    const centerX = sumX / sumW;
+    const centerY = sumY / sumW;
+    const centerZ = sumZ / sumW;
+
+    const spanX = maxX - minX;
+    const spanY = maxY - minY;
+    const maxSpan = Math.max(spanX, spanY, 50);
+
+    const dist = Math.min(Math.max((maxSpan / 2) / Math.tan((25 * Math.PI) / 180) * 0.55, 45), 85);
+
+    g.cameraPosition(
+      { x: centerX, y: centerY, z: centerZ + dist },
+      { x: centerX, y: centerY, z: centerZ },
+      500
+    );
+  };
+
+  useEffect(() => {
     let cancelled = false;
 
     async function load() {
@@ -458,37 +523,33 @@ export default function App() {
           graphData={graphData}
           backgroundColor="#050713"
           nodeRelSize={6}
-          d3VelocityDecay={0.55}
-          d3AlphaDecay={0.06}
+          d3VelocityDecay={0.4}
+          d3AlphaDecay={0.09}
           d3Force={(forceName, force) => {
             if (forceName === "link") {
               force
                 .distance((link) => {
-                  if (link.link_type === "backbone") return 26;
-                  if (link.link_type === "reading") return 24;
-                  return (link.weight_current && link.weight_current > 0) ? 18 : 8;
+                  if (link.link_type === "backbone") return 14;
+                  if (link.link_type === "reading") return 12;
+                  return (link.weight_current && link.weight_current > 0) ? 8 : 3;
                 })
                 .strength((link) => {
-                  if (link.link_type === "backbone") return 0.85;
-                  if (link.link_type === "reading") return 0.8;
-                  return (link.weight_current && link.weight_current > 0) ? 0.65 : 0.95;
+                  if (link.link_type === "backbone") return 0.98;
+                  if (link.link_type === "reading") return 0.9;
+                  return (link.weight_current && link.weight_current > 0) ? 0.8 : 0.99;
                 });
             }
             if (forceName === "charge") {
               force
                 .strength((node) => {
-                  if (node.type === "core") return -30;
-                  if (node.intensity && node.intensity > 0) return -16;
-                  return -1.2;
+                  if (node.type === "core") return -8;
+                  if (node.intensity && node.intensity > 0) return -4;
+                  return -0.2;
                 })
-                .distanceMax(100);
+                .distanceMax(60);
             }
           }}
-          onEngineStop={() => {
-            if (graphRef.current) {
-              graphRef.current.zoomToFit(800, 24, (node) => node.type === "core" || (node.intensity && node.intensity > 0));
-            }
-          }}
+          onEngineStop={fitActiveGraph}
           nodeThreeObjectExtend={false}
           nodeThreeObject={(node) => {
             const activationWeight = node.activation?.weight ?? 0;
