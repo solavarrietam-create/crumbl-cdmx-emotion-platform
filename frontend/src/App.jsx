@@ -293,7 +293,7 @@ export default function App() {
       legendAnger: "Enojo",
       legendSadness: "Tristeza",
       legendSurprise: "Sorpresa",
-      legendDisgust: "Asco",
+      legendDisgust: "Disgusto",
       loading: "Cargando grafo...",
       error: "No se pudo cargar el grafo."
     };
